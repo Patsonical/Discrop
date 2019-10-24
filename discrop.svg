@@ -13,7 +13,7 @@
    sodipodi:docname="discrop.svg"
    width="1024"
    height="1024"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
    inkscape:export-filename="C:\Users\Patsonical\Desktop\discrop_blue.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
@@ -25,7 +25,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -40,8 +40,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1555"
-     inkscape:window-height="1371"
+     inkscape:window-width="1941"
+     inkscape:window-height="1473"
      id="namedview3718"
      showgrid="false"
      inkscape:snap-global="true"
@@ -52,10 +52,10 @@
      inkscape:snap-nodes="true"
      inkscape:snap-bbox-midpoints="true"
      inkscape:zoom="0.99342105"
-     inkscape:cx="502.66997"
+     inkscape:cx="270.64348"
      inkscape:cy="502.1244"
-     inkscape:window-x="1008"
-     inkscape:window-y="0"
+     inkscape:window-x="470"
+     inkscape:window-y="145"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer4"
      inkscape:snap-grids="true"
@@ -70,7 +70,7 @@
      id="layer4"
      inkscape:label="Layer 4">
     <path
-       style="fill:#f04747;fill-opacity:1;stroke-width:1.50850904"
+       style="fill:#7289da;fill-opacity:1;stroke-width:1.50850904"
        d="M 512 0 A 512 512 0 0 0 0 512 A 512 512 0 0 0 512 1024 A 512 512 0 0 0 1024 512 A 512 512 0 0 0 512 0 z "
        id="rect3850-5" />
   </g>
