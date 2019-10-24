@@ -1,0 +1,8 @@
+# INSTRUCTIONS:
+# Replace the {dummy-values} with a Discord token
+# and the user ID of the user to send error logs to
+# Then rename this file to ".env"
+
+# .env
+DISCORD_TOKEN={discord-token}
+DISCORD_MASTER={discord-user-id}
