@@ -20,8 +20,7 @@ def cropImage(src):             # src :: PIL.Image object
     extra       = int(mod.shape[0] * 0.005)
     mask        = np.ones((threshold), dtype=bool)
     greyscale   = np.mean(croppedSides, axis=2)
-    bg          = 0 # 255 for white
-    reduced     = np.all(greyscale==bg, axis=1)
+    reduced     = np.all(greyscale.T == greyscale[:,0], axis=0)
 
     # Top Cut
     mask[-1] = False
