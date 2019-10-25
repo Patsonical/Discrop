@@ -33,9 +33,10 @@ def cropImage(src):             # src :: PIL.Image object
     mask[-1] = True
     mask[0]  = False
     cut = np.where(np.all(rollingStride(reduced, threshold) == mask, axis=1)==True)[0]
+    cut = cut[np.where(cut>topCut)]
     botCut = reduced.size
     if cut.size != 0:
-        botCut = cut[np.where(cut>topCut)][0] - extra
+        botCut = cut[0] - extra
 
     if topCut == 0 and botCut == reduced.size:
         return None

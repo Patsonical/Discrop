@@ -12,7 +12,8 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print(f'{client.user} connected!')
+    # print(f'{client.user} connected!')
+    pass
 
 @client.event
 async def on_message(message):
@@ -29,9 +30,9 @@ async def on_message(message):
                 outbytes.seek(0)
                 out = discord.File(outbytes, filename=att.filename)
                 await message.channel.send(content="Let me crop that for you " + message.author.mention, file=out)
-                print(f'Cropped image sent!')
-            else:
-                print('Image doesn\'t need cropping!')
+                # print(f'Cropped image sent!')
+            # else:
+                # print('Image doesn\'t need cropping!')
 
 @client.event
 async def on_error(event, *args, **kwargs):
