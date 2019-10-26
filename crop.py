@@ -15,11 +15,15 @@ def cropImage(src):             # src :: PIL.Image object
     margin = int(mod.shape[1] * 0.025)
     croppedSides = mod[:, margin:-margin, :]
 
+    # Reduce color depth (decrease threshold for "same color")
+    colorMultiplier = 0.05
+    lessColor = (croppedSides * colorMultiplier).astype('uint8')
+
     # Crop setup
     threshold   = int(mod.shape[0] * 0.05) + 1
     extra       = int(mod.shape[0] * 0.005)
     mask        = np.ones((threshold), dtype=bool)
-    greyscale   = np.mean(croppedSides, axis=2)
+    greyscale   = np.mean(lessColor, axis=2)
     reduced     = np.all(greyscale.T == greyscale[:,0], axis=0)
 
     # Top Cut
