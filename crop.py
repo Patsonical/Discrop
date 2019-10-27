@@ -1,5 +1,4 @@
 from PIL import Image
-from sys import argv
 import numpy as np
 
 def rollingStride(a, size):
@@ -10,6 +9,10 @@ def rollingStride(a, size):
 def cropImage(src):             # src :: PIL.Image object
     # Convert to numpy array
     mod = np.array(src.convert('RGB'))
+
+    # Don't crop if the image is too wide
+    if mod.shape[0] < mod.shape[1]:
+        return None
 
     # Chop off the sides
     margin = int(mod.shape[1] * 0.025)
