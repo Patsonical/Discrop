@@ -23,7 +23,7 @@ def cropImage(src):             # src :: PIL.Image object
     lessColor = (croppedSides * colorMultiplier).astype('uint8')
 
     # Crop setup
-    threshold   = int(mod.shape[0] * 0.05) + 1
+    threshold   = int(mod.shape[0] * 0.1) + 1
     extra       = int(mod.shape[0] * 0.005)
     mask        = np.ones((threshold), dtype=bool)
     greyscale   = np.mean(lessColor, axis=2)
