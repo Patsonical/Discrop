@@ -26,7 +26,7 @@ async def on_message(message):
             cropped = cropImage(img)
             if cropped != None:
                 outbytes = BytesIO()
-                cropped.save(outbytes, format='JPEG')
+                cropped.save(outbytes, format='PNG')
                 outbytes.seek(0)
                 out = discord.File(outbytes, filename=att.filename)
                 await message.channel.send(content="Let me crop that for you " + message.author.mention, file=out)

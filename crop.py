@@ -8,7 +8,7 @@ def rollingStride(a, size):
 
 def cropImage(src):             # src :: PIL.Image object
     # Convert to numpy array
-    mod = np.array(src.convert('RGB'))
+    mod = np.array(src.convert('RGBA'))
 
     # Don't crop if the image is too wide
     if mod.shape[0] < mod.shape[1]:
